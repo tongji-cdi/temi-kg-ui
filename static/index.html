@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/ontology-page.css">
+        <link rel="stylesheet" href="styles/semantic-page.css">
+        <link rel="stylesheet" href="styles/semantic-locations.css">
+        <link rel="stylesheet" href="styles/semantic-others.css">
+        <link rel="stylesheet" href="styles/semantic-ego.css">
+        <link rel="stylesheet" href="styles/procedural-page.css">
+        <script src="libs/vue.js"></script>
+        <script src="libs/neo4j.js"></script>
+        <script src="libs/axios.js"></script>
+    </head>
+
+    <body>
+        <div id="app">
+            <transition name="fade">
+                <ontology-page 
+                    v-show="currentMode == 'ontology'"
+                    :ontologies="['人物', '项目', '环境', '物体', '任务']"
+                ></ontology-page>
+            </transition>
+
+            <transition name="fade">
+                <semantic-page 
+                    v-show="currentMode == 'semantic'"
+                    :current-ontology="semantic.currentOntology" 
+                ></semantic-page>
+            </transition>
+
+            <transition name="fade">
+                <procedural-page 
+                    v-show="currentMode == 'procedural'"
+                    :current-mode="currentMode"
+                    :current-ontology="semantic.currentOntology" 
+                ></procedural-page>
+            </transition>
+
+            <transition name="fade">
+                <div class="robot-speech" v-show="robotSpeech.length > 0">
+                    {{ robotSpeech }}
+                </div>
+            </transition>
+        </div>
+
+        <button id="refresh">Refresh</button>
+
+        <script src="scripts/init.js"></script>
+        <script src="scripts/modules/ontology-page.js"></script>
+
+        <script src="scripts/modules/semantic-default.js"></script>
+        <script src="scripts/modules/semantic-locations.js"></script>
+        <script src="scripts/modules/semantic-others.js"></script>
+        <script src="scripts/modules/semantic-ego.js"></script>
+        <script src="scripts/modules/semantic-page.js"></script>
+        <script src="scripts/modules/procedural-page.js"></script>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

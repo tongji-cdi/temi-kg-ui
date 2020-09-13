@@ -1,0 +1,41 @@
+html, body {
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    padding-top: 35px;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+#refresh {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 100px;
+    height: 50px;
+    font-size: 1.5em;
+    color: white;
+    background: gray;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}
+
+.robot-speech {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 1.6em;
+    background: rgb(0, 190, 149);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+}

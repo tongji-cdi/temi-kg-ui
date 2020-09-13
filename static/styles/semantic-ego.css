@@ -1,0 +1,101 @@
+.semantic-ego {
+    color: white;
+}
+
+.semantic-ego .top-bar i {
+    position: fixed; 
+    font-size: 4em; 
+    left: 45px; 
+    top: 90px;
+    z-index: 10000;
+}
+
+.semantic-ego .top-bar span {
+    position: fixed; 
+    font-size: 2em; 
+    top: 100px;
+    left: 200px;
+}
+
+.semantic-ego .top-bar span:before {
+    content: '\a0';
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+    top: 1.5em;
+    width: 3px;
+    height: 40px;
+    background-color: white;
+    z-index: 0;
+}
+
+.semantic-ego .line {
+    position: absolute;
+    border-top: 3px solid white;
+    top: 188px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+    height: 12px;
+    background-image: linear-gradient(white, white),
+                      linear-gradient(white, white);
+
+    background-repeat: no-repeat;
+    background-size: 3px 12px;
+    background-position: top left, top right;
+}
+
+.ego-locations img {
+    position: absolute;
+    right: 50px;
+    top: 220px;
+    width: 500px;
+}
+
+.ego-locations .ego-location-nodes {
+    position: absolute;
+    right: 50px;
+    top: 220px;
+    width: 500px;
+}
+
+.ego-location-node {
+    position: absolute;
+}
+
+.ego-location-node .circle {
+    width: 10px;
+    height: 10px;
+    background: rgb(0, 190, 149);
+}
+
+.semantic-ego .ego-node-sections {
+    position: absolute;
+    left: 50px;
+    top: 240px;
+    width: 500px;
+    height: 500px;
+    overflow: scroll;
+}
+
+.semantic-ego .section {
+    margin-bottom: 30px;
+}
+
+.semantic-ego .ego-node-sections .name {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.semantic-ego .ego-node {
+    display: inline-block;
+    font-size: 1.6em;
+    padding: 10px;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    background: rgb(58,58,58);
+    background: linear-gradient(0deg, rgba(58,58,58,1) 0%, rgba(86,86,86,1) 34%, rgba(108,108,108,1) 100%);
+}

@@ -1,0 +1,42 @@
+.semantic-locations img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    width: 700px;
+    margin-top: 50px;
+}
+
+.semantic-locations .location-nodes {
+    position: absolute;
+    width: 700px;
+    left: 50%;
+    transform: translate(-50%, -10px);
+    margin-top: 50px;
+}
+
+.location-node {
+    position: absolute;
+}
+
+.location-node.large {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: rgb(58,58,58);
+    background: linear-gradient(0deg, rgb(0, 190, 149) 0%, rgb(2, 196, 154) 34%, rgb(38, 243, 199) 100%);
+    border-radius: 20px;
+    transform: translate(-50%, 0);
+}
+
+.location-node .circle {
+    width: 10px;
+    height: 10px;
+    background: rgb(0, 190, 149);
+}
+
+.location-node.large .circle {
+    display: none;
+}
