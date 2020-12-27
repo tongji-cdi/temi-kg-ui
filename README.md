@@ -20,3 +20,8 @@ python -m pip install flask neo4j
 ```
 python server.py
 ```
+
+## Code Structure
+* `server.py` is the main entry point of the program. It starts a Flask API for KG queries, and serves the UI code in the `static` folder.
+* `kg.py` contains a class that handles the communication between Neo4j and Python. The Flask server uses this class to talk to Neo4j.
+* `static` contains code for a web-based GUI built with Vue.
