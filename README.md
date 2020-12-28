@@ -1,14 +1,17 @@
-# Temi WoZ UI
+# Knowledge Graph UI for the Temi robot
 Knowledge graph UI code used in our CHI'21 paper "Patterns for Representing Knowledge Graphs to Communicate Situational Knowledge of Service Robots".
+
+![A screenshot of the KG UI.](https://github.com/tongji-cdi/temi-woz-frontend/raw/master/data/frontend-photo.png)
 
 ## Running the code
 
 ### Set up the knowledge graph
-Download the neo4j graph data we have prepared from [here](https://github.com/shaunabanana/temi-woz-frontend/raw/master/data/lab-kg.dump). You can import the data by putting it in you database folder and running the neo4j-admin command:
+After you've set up an empty database as described in [this article](https://neo4j.com/developer/neo4j-desktop/),
+download the neo4j graph data dump we have prepared [here](https://github.com/shaunabanana/temi-woz-frontend/raw/master/data/lab-kg.dump). You can import the data by putting it in you database folder and running the neo4j-admin command:
 ```
 neo4j-admin load --from=lab-kg.dump --database=graph.db --force
 ```
-More details can be found in the [Neo4j Docs](https://neo4j.com/docs/operations-manual/current/tools/dump-load/)
+More detailed instruction can be found in the [Neo4j Docs](https://neo4j.com/docs/operations-manual/current/tools/dump-load/)
 
 
 ### Install python libraries
