@@ -1,4 +1,4 @@
-# Temi WoZ UI
+# Knowledge Graph UI for the Temi robot
 Knowledge graph UI code used in our CHI'21 paper "Patterns for Representing Knowledge Graphs to Communicate Situational Knowledge of Service Robots".
 
 ![A screenshot of the KG UI.](https://github.com/tongji-cdi/temi-woz-frontend/raw/master/data/frontend-photo.png)
