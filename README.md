@@ -11,7 +11,7 @@ download the neo4j graph data dump we have prepared [here](https://github.com/sh
 ```
 neo4j-admin load --from=lab-kg.dump --database=graph.db --force
 ```
-More detail instruction can be found in the [Neo4j Docs](https://neo4j.com/docs/operations-manual/current/tools/dump-load/)
+More detailed instruction can be found in the [Neo4j Docs](https://neo4j.com/docs/operations-manual/current/tools/dump-load/)
 
 
 ### Install python libraries
