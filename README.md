@@ -1,6 +1,8 @@
 # Temi WoZ UI
 Knowledge graph UI code used in our CHI'21 paper "Patterns for Representing Knowledge Graphs to Communicate Situational Knowledge of Service Robots".
 
+![A screenshot of the KG UI.](https://github.com/tongji-cdi/temi-woz-frontend/raw/master/data/frontend-photo.png)
+
 ## Running the code
 
 ### Set up the knowledge graph
